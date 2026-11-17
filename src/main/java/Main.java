@@ -1,27 +1,24 @@
 
-public class Main {
+        public class Main {
 
-    public static void main(String[] args) {
+            public static void main(String[] args) {
 
-        Moped slowRide = new Moped();
-        slowRide.setColor("Red");
-        slowRide.setFuelCapacity(5);
+                Moped slowRide = new Moped("Red", 1, 0, 5);
 
-        Car myCar = new Car();
-        myCar.setColor("Black");
-        myCar.setNumberOfPassengers(5);
+                Car myCar = new Car("Black", 5, 500, 60);
 
-        SemiTruck truck = new SemiTruck();
-        truck.setCargoCapacity(10000);
+                SemiTruck truck = new SemiTruck("Blue", 2, 10000, 300);
 
-        Hovercraft hovercraft = new Hovercraft();
-        hovercraft.setColor("White");
+                Hovercraft hovercraft = new Hovercraft("White", 8, 1000, 100);
 
-        System.out.println(slowRide.getColor());
-        System.out.println(slowRide.getFuelCapacity());
-        System.out.println(myCar.getColor());
-        System.out.println(myCar.getNumberOfPassengers());
-        System.out.println(truck.getCargoCapacity());
-        System.out.println(hovercraft.getColor());
-    }
-}
+                System.out.println(slowRide.getColor());
+                System.out.println(slowRide.getFuelCapacity());
+
+                System.out.println(myCar.getColor());
+                System.out.println(myCar.getNumberOfPassengers());
+
+                System.out.println(truck.getCargoCapacity());
+
+                System.out.println(hovercraft.getColor());
+            }
+        }
